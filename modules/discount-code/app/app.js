@@ -169,7 +169,7 @@ module.exports = function discountCodeExample(app, options) {
     const discountInArgument = getInArgument('discount') || 'nothing'
     const nameInArgument = getInArgument('FirstName') || 'nothing'
     const responseObject = {
-      name: nameInArgument
+      name: nameInArgument,
       discount: discountInArgument,
       discountCode: generateRandomCode() + `-${discountInArgument}%`,
     }
