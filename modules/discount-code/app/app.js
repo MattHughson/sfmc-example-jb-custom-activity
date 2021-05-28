@@ -129,7 +129,7 @@ module.exports = function discountCodeExample(app, options) {
 
     const request = req.body
 
-    console.log(' req.body', JSON.stringify(req.body))
+    console.log(' req.body exe', JSON.stringify(req.body))
 
     // Find the in argument
     function getInArgument(k) {
