@@ -21,7 +21,7 @@ module.exports = function configJSON(req) {
         inArguments: [
           {
             discount: 10,
-            FirstName: '{{Contact}}',
+            FirstName: '{{Contact.Attribute.DE_NAME.FirstName}}',
           },
         ],
         outArguments: [],
