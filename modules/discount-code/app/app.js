@@ -133,7 +133,7 @@ module.exports = function discountCodeExample(app, options) {
 
     // Find the in argument
     function getInArgument(k) {
-      console.log('arguments prop', e)
+      console.log('arguments prop', k)
       if (request && request.inArguments) {
         for (let i = 0; i < request.inArguments.length; i++) {
           let e = request.inArguments[i]
