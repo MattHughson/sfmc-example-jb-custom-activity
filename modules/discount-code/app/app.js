@@ -133,9 +133,11 @@ module.exports = function discountCodeExample(app, options) {
 
     // Find the in argument
     function getInArgument(k) {
+      console.log('arguments prop', e)
       if (request && request.inArguments) {
         for (let i = 0; i < request.inArguments.length; i++) {
           let e = request.inArguments[i]
+          console.log('arguments', e)
           if (k in e) {
             return e[k]
           }
@@ -167,7 +169,7 @@ module.exports = function discountCodeExample(app, options) {
 
     // example: https://developer.salesforce.com/docs/atlas.en-us.noversion.mc-app-development.meta/mc-app-development/example-rest-activity.htm
     const discountInArgument = getInArgument('discount') || 'nothing'
-    const nameInArgument = getInArgument('FirstName')
+    const nameInArgument = getInArgument('FirstName') || 'Nohing'
     const responseObject = {
       name: nameInArgument,
       discount: discountInArgument,
