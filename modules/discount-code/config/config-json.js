@@ -21,7 +21,7 @@ module.exports = function configJSON(req) {
         inArguments: [
           {
             discount: 15,
-            Contact: '{{Contact}}',
+            FirstName: '{{Contact_Salesforce}}',
           },
         ],
         outArguments: [],

@@ -171,7 +171,7 @@ module.exports = function discountCodeExample(app, options) {
 
     // example: https://developer.salesforce.com/docs/atlas.en-us.noversion.mc-app-development.meta/mc-app-development/example-rest-activity.htm
     const discountInArgument = getInArgument('discount') || 'nothing'
-    const nameInArgument = getInArgument('Contact') || 'Nohing'
+    const nameInArgument = getInArgument('FirstName') || 'Nohing'
     const responseObject = {
       name: nameInArgument,
       discount: discountInArgument,
