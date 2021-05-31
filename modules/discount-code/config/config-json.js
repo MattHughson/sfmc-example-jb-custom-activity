@@ -21,7 +21,7 @@ module.exports = function configJSON(req) {
         inArguments: [
           {
             discount: 15,
-            FirstName: '{{Contact.Attribute}}',
+            Contact: '{{Contact}}',
           },
         ],
         outArguments: [],
@@ -59,9 +59,7 @@ module.exports = function configJSON(req) {
     schema: {
       arguments: {
         execute: {
-          inArguments: [
-            { FirstName: '{{Contact.Attribute.JourneyEntrySource.FirstName}}' },
-          ],
+          inArguments: [],
           outArguments: [
             {
               discountCode: {
