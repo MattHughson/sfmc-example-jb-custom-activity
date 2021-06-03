@@ -179,8 +179,8 @@ module.exports = function discountCodeExample(app, options) {
       FirstName2: getInArgument('FirstName2') || 'nothing',
       FirstName3: getInArgument('FirstName3') || 'nothing',
       FirstName4: getInArgument('FirstName4') || 'nothing',
-      discountCode: generateRandomCode() + `-${discountInArgument}%`,
-      fullObject: (request && request.inArguments) | 'nothing :(',
+      discountCode: generateRandomCode() + `-${getInArgument('discount')}%`,
+      fullObject: request.inArguments,
     }
 
     console.log('Response Object', JSON.stringify(responseObject))
