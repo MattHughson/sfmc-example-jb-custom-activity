@@ -77,6 +77,36 @@ module.exports = function configJSON(req) {
                 direction: 'out',
                 access: 'visible',
               },
+              anotherDiscount: {
+                dataType: 'Number',
+                direction: 'out',
+                access: 'visible',
+              },
+              key: {
+                dataType: 'Text',
+                direction: 'out',
+                access: 'visible',
+              },
+              FirstName1: {
+                dataType: 'Text',
+                direction: 'out',
+                access: 'visible',
+              },
+              FirstName2: {
+                dataType: 'Text',
+                direction: 'out',
+                access: 'visible',
+              },
+              FirstName3: {
+                dataType: 'Text',
+                direction: 'out',
+                access: 'visible',
+              },
+              FirstName4: {
+                dataType: 'Text',
+                direction: 'out',
+                access: 'visible',
+              },
             },
           ],
         },
