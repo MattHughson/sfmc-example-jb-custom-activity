@@ -21,7 +21,11 @@ module.exports = function configJSON(req) {
         inArguments: [
           {
             discount: 15,
-            FirstName: '{{Contact_Salesforce}}',
+            key: '{{Contact.Key}}',
+            FirstName1: '{{Contact_Salesforce}}',
+            FirstName2: '{{Contact.Contact_Salesforce}}',
+            FirstName3: '{{Contact.Salesforce}}',
+            FirstName3: '{{Contact_Salesforce.FirstName}}',
           },
         ],
         outArguments: [],
